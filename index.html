@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To do list</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="title">
+            <h1>To Do List</h1>
+        </header>
+        <form class="todo-list" id="todo-form">
+            <input type="text" name="todo-input " class="todo-input" id="todo" placeholder="Type your task">
+            <button type="submit" id="add">Add
+                <i class="fa-sharp fa-regular fa-plus"></i>
+            </button>
+        </form>
+        <div class="todo-tasks" id="todo-task"></div>
+    </div>
+    <div id="modal-edit">
+        <div class="modal-content">
+            <h2>Edite sua tarefa</h2>
+            <div class="modal-form">
+                <input type="text" id="input-modal">
+                <button id="btn-modal">Ok</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
